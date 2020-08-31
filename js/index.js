@@ -51,11 +51,23 @@ navBar[3].textContent = 'Features';
 navBar[4].textContent = 'About';
 navBar[5].textContent = 'Contact';
 
-const imgTwo = document.querySelector('#cta-img');
+navBar[0].style.color = 'green';
+navBar[1].style.color = 'green';
+navBar[2].style.color = 'green';
+navBar[3].style.color = 'green';
+navBar[4].style.color = 'green';
+navBar[5].style.color = 'green';
+
+document.querySelector('nav').style.color = 'green';
+
+const child = document.createTextNode('Ideas');
+document.querySelector('nav').appendChild(child);
+
+document.querySelector('nav').prepend('Hello');
+
+const imgTwo = document.getElementById('cta-img');
 
 imgTwo.src = 'img/header-img.png';
-
-br = document.createElement('br');
 
 const h1 = document.querySelector('h1');
 
@@ -63,6 +75,9 @@ h1.innerHTML = 'DOM <br> Is <br> Awesome';
 
 const button = document.querySelector('button');
 button.textContent = 'Get Started';
+
+button.style.backgroundColor = 'black';
+button.style.color = 'white';
 
 const h4 = document.querySelectorAll('h4');
 
@@ -85,6 +100,9 @@ p[6].textContent = '1 (888) 888-8888';
 p[7].textContent = 'sales@greatidea.io';
 p[8].textContent = 'Copyright Great Idea! 2018';
 
-const midImg = document.querySelector('.middle-img');
+const midImg = document.getElementById('middle-img');
 
 midImg.src = 'img/mid-page-accent.jpg';
+
+const body = document.querySelector('body');
+body.style.backgroundColor = 'antiquewhite';
